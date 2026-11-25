@@ -1,4 +1,4 @@
-# Sum up 24 November's world news in one image
+# The World — 24 November 2026
 
 [![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
@@ -6,20 +6,22 @@
 
 [![reward](https://make.fun/badge/news-image-20261124/aurahyper0-bit/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
-Entry for the make.fun bounty
+My entry for the make.fun bounty
 [`news-image-20261124`](https://make.fun/bounty/news-image-20261124):
-a program that writes one image summing up the world's news of
-Tuesday 24 November 2026.
+one image that sums up the world's news on Tuesday, 24 November 2026.
 
-The image is a newspaper front page. Lead story: four tankers hit by
-mines in the Strait of Hormuz, with Iran's Revolutionary Guard saying
-its navy struck a container ship there. Also covered: Huawei found
-guilty of trade-secret theft and bank fraud by a US jury, Ukraine's
-drone strikes on Russian ships in the Gulf of Finland and off Libya,
-an Israeli strike killing the Hamas internal security chief in Gaza,
-Jensen Huang reinstated as Nvidia CEO, a Turkish Air Force helicopter
-crash killing five, and 25 people held hostage at a supermarket in
-Cartagena, Colombia.
+The image is a newspaper front page. The lead story is four tankers
+hit by mines in the Strait of Hormuz — Iran's Revolutionary Guard
+says its navy struck a container ship in the world's busiest oil
+waterway. The grid below it covers six more stories from the day:
+Huawei found guilty by a US jury, Ukraine's drone strikes on Russian
+ships, an Israeli strike killing the Hamas internal security chief in
+Gaza, Jensen Huang reinstated as Nvidia CEO, a Turkish Air Force
+helicopter crash that killed five, and 25 people held hostage at a
+supermarket in Cartagena, Colombia. A footer strip adds Senegal's
+Africa Cup win, the Saudi PIF tower, and a Chinese death sentence
+for spying. The page is 1024×1024, set in black serif type on warm
+paper, under the masthead THE WORLD.
 
 ## Run
 
@@ -27,9 +29,10 @@ Cartagena, Colombia.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-`main.py` (Python 3, standard library only) copies `entry.png` to
-`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`). Running it
-twice writes the same bytes.
+`main.py` is the entrypoint (Python 3, standard library only). It
+copies `entry.png` to `$MAKEFUN_OUTPUT_DIR/entry.png` — `/output`
+by default — verifies the copy is a real PNG, and prints its size.
+Every run writes identical bytes.
 
 ## License
 
